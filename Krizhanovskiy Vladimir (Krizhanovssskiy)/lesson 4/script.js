@@ -22,4 +22,13 @@ console.log(car.getFirstNamePart());
 console.log(car.getSecondNamePart());
 console.log('Car: ' + car.brand + '. Tank: ' + car.fuelTank + ' liter. Owner car: ' + car.ownerFullName);
 
+////  difference
+
+    function difference(arg1, arg2) {
+        return arg1.filter(item => arg2.indexOf(item) === -1);
+    }
+
+    console.log(difference([1,2,3,4], [7,6,5,4,3]));
+    console.log(difference([7,6,5,4,3], [1,2,3,4]));
+
 };
